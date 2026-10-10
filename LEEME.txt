@@ -1,5 +1,5 @@
-Kanji Trainer v0.3
-Abre index.html en el navegador o publica estos archivos en GitHub Pages.
-Fecha de examen configurable y racha de estudio (solo cuenta al responder o evaluar tarjetas).
-El progreso, fecha y racha se guardan localmente; exporta una copia para transferirlos.
-La importación admite copias antiguas sin fecha/racha.
+Kanji Trainer v0.4 PREVIEW — 10/10/2026
+
+Corrección BUG-003: al terminar una sesión se oculta la tarjeta vacía y se presenta únicamente el resumen final, con porcentaje de aciertos.
+Incluye avance de localización de kanji al español. La localización de vocabulario y gramática NO está terminada.
+No subir a GitHub como versión final hasta completar revisión.
