@@ -1,0 +1,5 @@
+Kanji Trainer v0.3
+Abre index.html en el navegador o publica estos archivos en GitHub Pages.
+Fecha de examen configurable y racha de estudio (solo cuenta al responder o evaluar tarjetas).
+El progreso, fecha y racha se guardan localmente; exporta una copia para transferirlos.
+La importación admite copias antiguas sin fecha/racha.
