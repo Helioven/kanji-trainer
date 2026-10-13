@@ -1,0 +1,81 @@
+:root{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#20313b;background:#f3f5f3}*{box-sizing:border-box}body{margin:0}main{max-width:900px;margin:auto;padding:24px 16px 40px}header{display:flex;align-items:start;justify-content:space-between;margin-bottom:24px}h1{font-size:clamp(30px,6vw,48px);margin:5px 0;color:#164d45}header p{margin:0;color:#60726e}small{font-size:12px;color:#647772}header small{letter-spacing:2px}.toolbar,.stats,.study,.bottom,#qa{background:white;border:1px solid #e0e9e5;border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 5px 20px #193b3210}.toolbar{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}label{display:grid;gap:6px;font-size:13px;font-weight:600}select{width:100%;border:1px solid #cbdad3;border-radius:10px;padding:12px;background:#fff;color:#20313b;font-size:15px}.stats{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:8px}.stats div{display:grid;gap:5px}.stats strong{font-size:25px;color:#126558}.stats small{letter-spacing:0}.meta{display:flex;justify-content:space-between;font-size:13px;color:#72817b}article{min-height:240px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:20px}.japanese{font-size:clamp(42px,8vw,70px);line-height:1.4;overflow-wrap:anywhere}.answer{font-size:19px;margin-top:20px;white-space:pre-line;color:#1c6559}.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}button,.upload{border:0;border-radius:10px;padding:12px 18px;background:#126558;color:white;font-weight:700;cursor:pointer;font-size:14px}.subtle,.upload{background:#e9f1ed;color:#245a50}.bad{background:#a84043}.good{background:#21835d}button:hover,.upload:hover{filter:brightness(.95)}.choices{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px}.choices button{background:#edf3ef;color:#183d34;text-align:left;min-height:56px}.choices button:disabled{opacity:.75;cursor:default}.choices button.correct{background:#c8ebd8}.choices button.wrong{background:#f7cdd0}#feedback{text-align:center;min-height:24px;margin-bottom:10px;font-weight:600}.bottom p{font-size:13px;color:#647772}.bottom .actions{justify-content:start}#qa pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eff4f1;padding:12px;border-radius:10px}footer{text-align:center;color:#7c8984;font-size:12px}@media(max-width:560px){.toolbar{grid-template-columns:1fr 1fr}.toolbar label:last-child{grid-column:1/-1}.stats{grid-template-columns:1fr 1fr}.choices{grid-template-columns:1fr}article{min-height:200px}.japanese{font-size:46px}}
+
+#sessionEnd{text-align:center}#sessionEnd h2{margin-top:0;color:#126558}@media(max-width:700px){.toolbar{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.toolbar label:last-child{grid-column:auto}}
+
+.goal{background:white;border:1px solid #e0e9e5;border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 5px 20px #193b3210}.goal-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.goal h2{margin:0;font-size:20px}.goal input{border:1px solid #cbdad3;border-radius:10px;padding:10px;font:inherit;color:#20313b;max-width:210px}.goal-counters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.goal-counters>div{background:#f1f6f3;border-radius:12px;padding:15px;display:grid;gap:5px;text-align:center}.goal-counters strong{font-size:30px;color:#126558}.goal-counters small{font-size:13px;letter-spacing:0}.goal p{font-size:12px;color:#647772;margin-bottom:0}@media(max-width:480px){.goal-heading label{width:100%}.goal input{max-width:none;width:100%}}
+
+.session-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0 12px}.session-results>div{background:#eff4f1;border-radius:12px;padding:16px 8px;display:grid;gap:5px;text-align:center}.session-results strong{font-size:clamp(24px,4vw,34px);color:#126558}.session-results small{font-size:12px;color:#60726e}.session-track{height:10px;background:#e9efec;border-radius:99px;overflow:hidden;margin:0 0 18px}.session-track>div{height:100%;width:0;background:#126558;border-radius:99px;transition:width .2s}#sessionEnd{text-align:center}
+
+.card-accuracy{font-size:.88rem;opacity:.8;text-align:center;margin:.6rem 0}
+
+.study-instructions{text-align:center;font-size:13px;color:#647772;margin:0 0 14px}
+
+.category-panel{background:#fff;border:1px solid #e0e9e5;border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 5px 20px #193b3210}.category-heading h2{font-size:19px;margin:0 0 6px;color:#164d45}.category-heading p{font-size:12px;color:#647772;margin:0 0 12px}.category-scroll{overflow-x:auto}.category-table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}.category-table th,.category-table td{padding:10px 8px;border-bottom:1px solid #e6eeea}.category-table th{color:#45665d}.category-table th:not(:first-child),.category-table td:not(:first-child){text-align:right;white-space:nowrap}.category-selected{background:#eaf5ee}.toolbar{grid-template-columns:repeat(5,minmax(0,1fr))}@media(max-width:700px){.toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:450px){.category-panel{padding:12px}.category-table{font-size:12px}}
+
+/* QA-014: cabecera decorativa aislada del área de estudio */
+header.hero{position:relative;isolation:isolate;overflow:hidden;min-height:220px;padding:24px 26px;border-radius:18px;background:#102d38 url('cabecera-japon.jpg') center 56% / cover no-repeat;color:#fff;align-items:flex-start;gap:16px;box-shadow:0 5px 20px #193b321a}
+header.hero::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(9,25,32,.88) 0%,rgba(9,25,32,.65) 48%,rgba(9,25,32,.22) 100%);pointer-events:none}
+header.hero .hero-copy{max-width:75%}
+header.hero h1,header.hero p,header.hero small{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.55)}
+header.hero small{opacity:.9}
+header.hero .japanese-date{font-size:clamp(15px,2.5vw,19px);font-weight:650;letter-spacing:.04em;margin-bottom:14px;color:#fff;text-shadow:0 1px 4px #000}
+header.hero #qaToggle{background:rgba(245,250,248,.94);color:#164d45;flex-shrink:0}
+/* Las tarjetas conservan fondo sólido y legibilidad independiente de la imagen */
+.study{background:#fff}
+@media(max-width:560px){header.hero{min-height:185px;padding:20px 16px;background-position:57% center}header.hero .hero-copy{max-width:78%}header.hero h1{font-size:clamp(25px,7vw,34px)}header.hero p{font-size:13px}header.hero #qaToggle{padding:10px;font-size:12px}}
+
+/* QA-015: valoración en cuadrícula 2x2 en pantallas pequeñas.
+   Solo se activa cuando las cuatro opciones de valoración están visibles. */
+@media (max-width:560px) {
+  .study .actions:has(#again:not([hidden])) {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+    max-width:320px;
+    margin-inline:auto;
+  }
+  .study .actions:has(#again:not([hidden])) > button:not([hidden]) {
+    width:100%;
+    min-height:46px;
+  }
+  .study .actions > button[hidden] { display:none; }
+}
+
+/* QA-017: meteorología independiente del progreso de estudio */
+header.hero{overflow:visible}
+header.hero::before{border-radius:inherit}
+header.hero .hero-copy{position:relative;z-index:1}
+.weather-line{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:-5px 0 12px;color:#fff;font-size:14px;text-shadow:0 1px 3px #000}
+.weather-change{padding:5px 9px;font-size:11px;background:rgba(245,250,248,.94);color:#164d45;border-radius:7px;text-shadow:none}
+.weather-picker{position:relative;z-index:5;width:min(420px,100%);padding:12px;margin:0 0 14px;background:#f8fbfa;color:#20313b;border-radius:10px;box-shadow:0 8px 24px #0004;text-shadow:none}
+.weather-picker[hidden]{display:none}
+.weather-picker label{font-size:12px}
+.weather-search{display:flex;gap:7px;margin-top:6px}
+.weather-search input{min-width:0;flex:1;border:1px solid #cbdad3;border-radius:8px;padding:9px;font-size:14px}
+.weather-search button{padding:9px 11px;font-size:13px}
+#weatherMessage{font-size:12px;margin-top:7px}
+.weather-results{display:grid;gap:5px;margin-top:7px;max-height:185px;overflow:auto}
+.weather-results button{background:#e9f1ed;color:#245a50;text-align:left;padding:9px;font-size:13px}
+@media(max-width:560px){.weather-line{font-size:12px;gap:5px 8px}.weather-change{font-size:10px;padding:5px 7px}header.hero{min-height:185px}.weather-picker{width:100%}}
+
+/* Ejemplos didácticos: visibles únicamente tras revelar la respuesta. */
+.kanji-examples{margin-top:1rem;text-align:left;display:grid;gap:.65rem}.kanji-examples[hidden]{display:none}.kanji-examples h3{font-size:1rem;margin:.3rem 0}.kanji-example{padding:.8rem;border:1px solid rgba(128,128,128,.25);border-radius:12px;overflow-wrap:anywhere}.kanji-example p{margin:.45rem 0 0;line-height:1.6}.kanji-example p[lang=ja]{font-size:1.1rem}.example-translation{opacity:.8;font-size:.94rem}
+
+/* Buscador de kanjis: v0.5.1 */
+.kanji-finder{background:#fff;border:1px solid #dce5e2;border-radius:18px;padding:20px;margin:18px 0}.finder-heading h2{margin:0 0 5px}.finder-heading p{margin:0 0 15px;color:#53646b}.kanji-finder label{display:block;margin-bottom:6px;font-weight:600}.kanji-finder input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #a9bcb8;border-radius:9px;font-size:16px}.finder-status{font-size:13px;color:#53646b;margin:10px 0}.finder-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:8px;max-height:340px;overflow:auto}.finder-result{display:flex;align-items:center;gap:12px;text-align:left;background:#f5faf8;color:#183b35;border:1px solid #dce9e5;border-radius:10px;padding:10px;cursor:pointer}.finder-result:hover,.finder-result:focus-visible{outline:2px solid #268569}.finder-result strong{font-size:28px;min-width:44px}.finder-result span{font-size:13px;line-height:1.5}.kanji-finder #kanjiSearchClear{margin-top:10px}
+
+.kanji-example ruby{ruby-position:over;ruby-align:center}.kanji-example rt{font-size:.65em;color:#476b67}.kanji-example p[lang="ja"]{line-height:2.5;overflow-wrap:anywhere}
+
+/* v0.5.4: ajustes de lectura y búsqueda en pantallas pequeñas */
+.kanji-finder{min-width:0}.kanji-finder input#kanjiSearch{display:block;width:100%;max-width:none;min-width:0;box-sizing:border-box;min-height:46px}.finder-results{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}.finder-result{min-width:0;width:100%;overflow-wrap:anywhere;white-space:normal}.finder-result span{min-width:0;overflow-wrap:anywhere}.kanji-example{min-width:0}.kanji-example strong{display:block;line-height:1.5}.kanji-example p[lang="ja"]{line-height:2.4;word-break:normal;overflow-wrap:break-word}.kanji-example rt{font-size:.65em}
+@media(max-width:560px){.kanji-finder{padding:16px;margin:16px 0}.finder-results{grid-template-columns:minmax(0,1fr);max-height:320px}.finder-result{padding:12px;gap:10px}.finder-result strong{flex:0 0 38px;min-width:38px;font-size:26px}.finder-result span{font-size:13px;line-height:1.45}.kanji-examples{width:100%;min-width:0}.kanji-example{padding:12px}.kanji-example p[lang="ja"]{font-size:1.05rem;line-height:2.5}.kanji-example .example-translation{font-size:.94rem;line-height:1.5}}
+
+/* v0.5.6: pulido de ejemplos y furigana en móvil */
+.kanji-examples{gap:.8rem}
+.kanji-example{background:#f7fbf9;border-color:#d9e9e2;padding:1rem;border-radius:14px}
+.kanji-example strong{line-height:1.55}
+.kanji-example p[lang="ja"]{margin-top:.7rem;line-height:2.15;letter-spacing:.025em;overflow-wrap:break-word}
+.kanji-example ruby{ruby-position:over;ruby-align:center;margin-inline:.065em}
+.kanji-example rt{font-size:.66em;color:#38695f;letter-spacing:0;line-height:1.15}
+.kanji-example .example-translation{margin-top:.3rem;line-height:1.55;opacity:.86}
+@media(max-width:560px){.kanji-example{padding:14px}.kanji-example p[lang="ja"]{font-size:1.08rem;line-height:2.2}.kanji-example .example-translation{margin-top:.25rem;line-height:1.5}}
