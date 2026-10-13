@@ -57,3 +57,11 @@ header.hero .hero-copy{position:relative;z-index:1}
 .weather-results{display:grid;gap:5px;margin-top:7px;max-height:185px;overflow:auto}
 .weather-results button{background:#e9f1ed;color:#245a50;text-align:left;padding:9px;font-size:13px}
 @media(max-width:560px){.weather-line{font-size:12px;gap:5px 8px}.weather-change{font-size:10px;padding:5px 7px}header.hero{min-height:185px}.weather-picker{width:100%}}
+
+/* Ejemplos didácticos: visibles únicamente tras revelar la respuesta. */
+.kanji-examples{margin-top:1rem;text-align:left;display:grid;gap:.65rem}.kanji-examples[hidden]{display:none}.kanji-examples h3{font-size:1rem;margin:.3rem 0}.kanji-example{padding:.8rem;border:1px solid rgba(128,128,128,.25);border-radius:12px;overflow-wrap:anywhere}.kanji-example p{margin:.45rem 0 0;line-height:1.6}.kanji-example p[lang=ja]{font-size:1.1rem}.example-translation{opacity:.8;font-size:.94rem}
+
+/* Buscador de kanjis: v0.5.1 */
+.kanji-finder{background:#fff;border:1px solid #dce5e2;border-radius:18px;padding:20px;margin:18px 0}.finder-heading h2{margin:0 0 5px}.finder-heading p{margin:0 0 15px;color:#53646b}.kanji-finder label{display:block;margin-bottom:6px;font-weight:600}.kanji-finder input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #a9bcb8;border-radius:9px;font-size:16px}.finder-status{font-size:13px;color:#53646b;margin:10px 0}.finder-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:8px;max-height:340px;overflow:auto}.finder-result{display:flex;align-items:center;gap:12px;text-align:left;background:#f5faf8;color:#183b35;border:1px solid #dce9e5;border-radius:10px;padding:10px;cursor:pointer}.finder-result:hover,.finder-result:focus-visible{outline:2px solid #268569}.finder-result strong{font-size:28px;min-width:44px}.finder-result span{font-size:13px;line-height:1.5}.kanji-finder #kanjiSearchClear{margin-top:10px}
+
+.kanji-example ruby{ruby-position:over;ruby-align:center}.kanji-example rt{font-size:.65em;color:#476b67}.kanji-example p[lang="ja"]{line-height:2.5;overflow-wrap:anywhere}
