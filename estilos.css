@@ -69,3 +69,13 @@ header.hero .hero-copy{position:relative;z-index:1}
 /* v0.5.4: ajustes de lectura y búsqueda en pantallas pequeñas */
 .kanji-finder{min-width:0}.kanji-finder input#kanjiSearch{display:block;width:100%;max-width:none;min-width:0;box-sizing:border-box;min-height:46px}.finder-results{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}.finder-result{min-width:0;width:100%;overflow-wrap:anywhere;white-space:normal}.finder-result span{min-width:0;overflow-wrap:anywhere}.kanji-example{min-width:0}.kanji-example strong{display:block;line-height:1.5}.kanji-example p[lang="ja"]{line-height:2.4;word-break:normal;overflow-wrap:break-word}.kanji-example rt{font-size:.65em}
 @media(max-width:560px){.kanji-finder{padding:16px;margin:16px 0}.finder-results{grid-template-columns:minmax(0,1fr);max-height:320px}.finder-result{padding:12px;gap:10px}.finder-result strong{flex:0 0 38px;min-width:38px;font-size:26px}.finder-result span{font-size:13px;line-height:1.45}.kanji-examples{width:100%;min-width:0}.kanji-example{padding:12px}.kanji-example p[lang="ja"]{font-size:1.05rem;line-height:2.5}.kanji-example .example-translation{font-size:.94rem;line-height:1.5}}
+
+/* v0.5.6: pulido de ejemplos y furigana en móvil */
+.kanji-examples{gap:.8rem}
+.kanji-example{background:#f7fbf9;border-color:#d9e9e2;padding:1rem;border-radius:14px}
+.kanji-example strong{line-height:1.55}
+.kanji-example p[lang="ja"]{margin-top:.7rem;line-height:2.15;letter-spacing:.025em;overflow-wrap:break-word}
+.kanji-example ruby{ruby-position:over;ruby-align:center;margin-inline:.065em}
+.kanji-example rt{font-size:.66em;color:#38695f;letter-spacing:0;line-height:1.15}
+.kanji-example .example-translation{margin-top:.3rem;line-height:1.55;opacity:.86}
+@media(max-width:560px){.kanji-example{padding:14px}.kanji-example p[lang="ja"]{font-size:1.08rem;line-height:2.2}.kanji-example .example-translation{margin-top:.25rem;line-height:1.5}}
