@@ -79,3 +79,13 @@ header.hero .hero-copy{position:relative;z-index:1}
 .kanji-example rt{font-size:.66em;color:#38695f;letter-spacing:0;line-height:1.15}
 .kanji-example .example-translation{margin-top:.3rem;line-height:1.55;opacity:.86}
 @media(max-width:560px){.kanji-example{padding:14px}.kanji-example p[lang="ja"]{font-size:1.08rem;line-height:2.2}.kanji-example .example-translation{margin-top:.25rem;line-height:1.5}}
+
+/* v0.5.6: tarjetas más legibles en escritorio, sin alterar el diseño móvil */
+@media (min-width: 900px) {
+  .kanji-examples { width:min(100%, 680px); margin-inline:auto; gap:1rem; }
+  .kanji-examples h3 { font-size:1.15rem; }
+  .kanji-example { padding:1.2rem 1.4rem; border-radius:16px; }
+  .kanji-example strong { font-size:1.08rem; }
+  .kanji-example p[lang="ja"] { font-size:1.35rem; line-height:2.25; }
+  .kanji-example .example-translation { font-size:1rem; }
+}
